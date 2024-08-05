@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+  
+  .header-logo {
+    font-size: 24px;
+    color: #000000;
+}
