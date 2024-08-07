@@ -37,7 +37,9 @@ li {
 }
   
 .header-logo {
+    font-family: 'Lucida Unicode Calligraphy', sans-serif;
     font-size: 48px;
+    font-weight: bold;
     color: #f0e4d4;
     margin-bottom: 12px;
 }
