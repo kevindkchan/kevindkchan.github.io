@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
 a, a:visited, a:hover, a:active {
     color: inherit;
 }
@@ -40,7 +44,6 @@ li {
 
 .nav-link {
     font-family: FinancierRegular;
-    font-weight: bold;
 }
 
 /* Hero Section */
@@ -73,7 +76,6 @@ li {
 
 .links {
     font-family: FinancierRegular;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
