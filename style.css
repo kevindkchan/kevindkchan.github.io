@@ -32,14 +32,15 @@ li {
     color: #f0e4d4;
 }
   
-  .header-logo {
+.header-logo {
     font-size: 48px;
     color: #f0e4d4;
     margin-bottom: 12px;
 }
 
 .nav-link {
-    font-family: FinancierRegular
+    font-family: FinancierRegular;
+    font-weight: bold;
 }
 
 /* Hero Section */
@@ -49,15 +50,28 @@ li {
     justify-content: center;
     gap: 12px;
     padding: 48px;
+    background: #0d1013;
+}
+
+.hero-header {
+    font-size: 30px;
+    font-family: FinancierBlack;
+    color: #add8e6;
+    margin-bottom: 24px;
+}
+
+.hero-text {
     font-size: 24px;
     font-family: FinancierRegular;
     color: #f0e4d4;
-    background: #0d1013;
+    margin-bottom: 4px;
 }
 
 /* Links section */
 
 .links {
+    font-family: FinancierRegular;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;

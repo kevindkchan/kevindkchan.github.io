@@ -1,0 +1,70 @@
+body {
+    font-family: FinancierBlack;
+    margin: 0;
+    padding: 0;
+    background: #0d1013;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+li {
+    display: inline;
+    margin: 4px;
+}
+
+/* Header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+    font-size: 32px;
+    background: #0d1013;
+    color: #f0e4d4;
+}
+  
+.header-logo {
+    font-size: 48px;
+    color: #f0e4d4;
+    margin-bottom: 12px;
+}
+
+.nav-link {
+    font-family: FinancierRegular;
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+/* Links section */
+
+.links {
+    font-family: FinancierRegular;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 44px;
+    background: #0d1013;
+    color: #ff6414
+}
+
+/* Footer section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0e4d4;
+    background: #0d1013;
+}
