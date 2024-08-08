@@ -66,12 +66,16 @@ li {
     color: #f0e4d4;
     margin-bottom: 8px;
     margin-right: 448px;
-    shape-outside: circle(50%);
 }
 
 .uni {
+    font-size: 64px;
     font-family: TeacherVarsity;
     color: #285c3c;
+}
+
+.uni:visited {
+    color:#285c3c;
 }
 
 .uni:hover {
