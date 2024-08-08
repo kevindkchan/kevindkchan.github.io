@@ -61,21 +61,28 @@ li {
 }
 
 .hero-header {
-    font-size: 72px;
+    font-size: 128px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-bottom: 24px;
 }
 
 .hero-text {
-    font-size: 36px;
+    font-size: 64px;
     font-family: FinancierRegular;
     color: #f0e4d4;
     margin-bottom: 8px;
+    margin-right: 448px;
+    shape-outside: circle(50%);
+}
+
+.uni:hover {
+    font-family: TeacherVarsity;
+    color: #285c3c;
 }
 
 .hero-header2 {
-    font-size: 48px;
+    font-size: 64px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-top: 24px;
@@ -83,7 +90,7 @@ li {
 }
 
 .hero-text2 {
-    font-size: 26px;
+    font-size: 36px;
     font-family: FinancierRegular;
     color: #f0e4d4;
     margin-bottom: 8px;
@@ -91,7 +98,7 @@ li {
 }
 
 .hero-header3 {
-    font-size: 44px;
+    font-size: 64px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-top: 24px;
@@ -99,14 +106,14 @@ li {
 }
 
 .hero-text3 {
-    font-size: 20px;
+    font-size: 36px;
     font-family: FinancierRegular;
     color: #f0e4d4;
     margin-bottom: 8px;
 }
 
 .hero-header4 {
-    font-size: 24px;
+    font-size: 64px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-top: 24px;
@@ -114,14 +121,14 @@ li {
 }
 
 .hero-text4 {
-    font-size: 12px;
+    font-size: 36px;
     font-family: FinancierRegular;
     color: #ff6414;
     margin-bottom: 8px;
 }
 
 .hero-header5 {
-    font-size: 18px;
+    font-size: 64px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-top: 24px;
@@ -129,7 +136,7 @@ li {
 }
 
 .hero-text5 {
-    font-size: 8px;
+    font-size: 36px;
     font-family: FinancierRegular;
     color: #f0e4d4;
     margin-bottom: 8px;
