@@ -25,7 +25,7 @@ li {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 12px;
     padding-left: 48px;
@@ -40,14 +40,7 @@ li {
     font-size: 48px;
     font-weight: bold;
     color: #f0e4d4;
-    margin-bottom: 12px;
-}
-
-.nav-link {
-    font-family: FinancierRegular;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    margin-top: 48px;
 }
 
 /* Hero Section */
@@ -76,9 +69,13 @@ li {
     shape-outside: circle(50%);
 }
 
-.uni:hover {
+.uni {
     font-family: TeacherVarsity;
     color: #285c3c;
+}
+
+.uni:hover {
+    color: #f2cd00;
 }
 
 .hero-header2 {
