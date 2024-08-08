@@ -59,12 +59,11 @@ li {
 }
 
 .hero-header {
-    font-size: 30px;
+    font-size: 36px;
     font-family: FinancierBlack;
     text-align: center;
     color: #ff6414;
-    margin-right: 42px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .hero-text {

@@ -1,5 +1,4 @@
 body {
-    font-family: FinancierBlack;
     margin: 0;
     padding: 0;
     background: #0d1013;
@@ -46,6 +45,9 @@ li {
 
 .nav-link {
     font-family: FinancierRegular;
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
 /* Hero Section */
@@ -59,17 +61,78 @@ li {
 }
 
 .hero-header {
-    font-size: 36px;
+    font-size: 72px;
     font-family: FinancierBlack;
     color: #add8e6;
     margin-bottom: 24px;
 }
 
 .hero-text {
-    font-size: 24px;
+    font-size: 36px;
     font-family: FinancierRegular;
     color: #f0e4d4;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+.hero-header2 {
+    font-size: 48px;
+    font-family: FinancierBlack;
+    color: #add8e6;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-text2 {
+    font-size: 26px;
+    font-family: FinancierRegular;
+    color: #f0e4d4;
+    margin-bottom: 8px;
+    margin-right: 172px;
+}
+
+.hero-header3 {
+    font-size: 44px;
+    font-family: FinancierBlack;
+    color: #add8e6;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-text3 {
+    font-size: 20px;
+    font-family: FinancierRegular;
+    color: #f0e4d4;
+    margin-bottom: 8px;
+}
+
+.hero-header4 {
+    font-size: 24px;
+    font-family: FinancierBlack;
+    color: #add8e6;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-text4 {
+    font-size: 12px;
+    font-family: FinancierRegular;
+    color: #ff6414;
+    margin-bottom: 8px;
+}
+
+.hero-header5 {
+    font-size: 18px;
+    font-family: FinancierBlack;
+    color: #add8e6;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-text5 {
+    font-size: 8px;
+    font-family: FinancierRegular;
+    color: #f0e4d4;
+    margin-bottom: 8px;
 }
 
 /* Links section */
@@ -79,18 +142,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     padding-right: 44px;
     background: #0d1013;
-    color: #ff6414
+    color: #ff6414;
 }
 
 /* Footer section */
 
 .footer {
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 48px;
     color: #f0e4d4;
     background: #0d1013;
 }
