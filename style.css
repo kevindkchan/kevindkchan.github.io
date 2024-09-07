@@ -1,169 +1,25 @@
 body {
+    background: #f0f0f0;
+}
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 32px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 1s steps(4) infinite;
+  }
+  .loader:before {
+    content:"Revamping..."
+  }
+  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+h1 {
     margin: 0;
     padding: 0;
-    background: #0d1013;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
-a, a:visited, a:hover, a:active {
-    color: inherit;
-}
-
-li {
-    display: inline;
-    margin: 4px;
-}
-
-/* Header section */
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    padding-left: 48px;
-    padding-right: 48px;
-    font-size: 32px;
-    background: #0d1013;
-    color: #f0e4d4;
-}
-  
-.header-logo {
-    font-family: 'Lucida Unicode Calligraphy', sans-serif;
-    font-size: 48px;
-    font-weight: bold;
-    color: #f0e4d4;
-    margin-top: 48px;
-}
-
-/* Hero Section */
-
-.hero {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 48px;
-    background: #0d1013;
-}
-
-.hero-header {
-    font-size: 128px;
-    font-family: FinancierBlack;
-    color: #add8e6;
-    margin-bottom: 24px;
-}
-
-.hero-text {
-    font-size: 64px;
-    font-family: FinancierRegular;
-    color: #f0e4d4;
-    margin-bottom: 8px;
-    margin-right: 448px;
-}
-
-.uni {
-    font-size: 64px;
-    font-family: TeacherVarsity;
-    color: #285c3c;
-}
-
-.uni:visited {
-    color:#285c3c;
-}
-
-.uni:hover {
-    color: #f2cd00;
-}
-
-.hero-header2 {
-    font-size: 64px;
-    font-family: FinancierBlack;
-    color: #add8e6;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.hero-text2 {
-    font-size: 36px;
-    font-family: FinancierRegular;
-    color: #f0e4d4;
-    margin-bottom: 8px;
-    margin-right: 172px;
-}
-
-.hero-header3 {
-    font-size: 64px;
-    font-family: FinancierBlack;
-    color: #add8e6;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.hero-text3 {
-    font-size: 36px;
-    font-family: FinancierRegular;
-    color: #f0e4d4;
-    margin-bottom: 8px;
-}
-
-.hero-header4 {
-    font-size: 64px;
-    font-family: FinancierBlack;
-    color: #add8e6;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.hero-text4 {
-    font-size: 36px;
-    font-family: FinancierRegular;
-    color: #ff6414;
-    margin-bottom: 8px;
-}
-
-.hero-header5 {
-    font-size: 64px;
-    font-family: FinancierBlack;
-    color: #add8e6;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.hero-text5 {
-    font-size: 36px;
-    font-family: FinancierRegular;
-    color: #f0e4d4;
-    margin-bottom: 8px;
-}
-
-/* Links section */
-
-.links {
-    font-family: FinancierRegular;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    padding-right: 44px;
-    background: #0d1013;
-    color: #ff6414;
-}
-
-/* Footer section */
-
-.footer {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 48px;
-    color: #f0e4d4;
-    background: #0d1013;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
