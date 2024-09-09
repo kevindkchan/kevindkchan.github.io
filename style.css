@@ -2,6 +2,11 @@ body {
     background: #f0f0f0;
 }
 
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .loader {
     width: fit-content;
     font-weight: bold;

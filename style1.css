@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: black;
+    font-size: 16px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+/* pages */
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
