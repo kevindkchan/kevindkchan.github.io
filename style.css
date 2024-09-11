@@ -116,7 +116,7 @@ hr {
 
 .pages {
     /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     scroll-behavior: smooth;
     height: 100vh;
 }
