@@ -7,10 +7,130 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>
-        <a href="index1.html">
-            <div class="loader"></div>
-        </a>
-    </h1>
+    <div id="navbar" class="navbar">
+        <div class="logo hover">
+            <a href="index1.html">
+                K.C.
+            </a>
+        </div>
+        <ul>
+            <a href="#about" class="hover">
+                ABOUT
+            </a>
+            <a href="#projects" class="hover">
+                PROJECTS
+            </a>
+            <a href="#contact" class="hover">
+                CONTACT
+            </a>
+        </ul>
+    </div>
+    <div class="pages">
+        <section id="home" class="home">
+            <div class="marble"></div>
+            <div class="typewriter">
+                <h1 class="home-header home-text">
+                    Hi
+                </h1>
+            </div>
+            <p class="intro">
+                I'm currently a third year computing science student at the University of Alberta.
+            </p>
+            <div class="home-arrow">
+                <a href="#about" class="arrow-hover">
+                    ↓
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="about">
+            <h1 class="about-header">
+                Good design is as little <br>
+                design as possible.
+            </h1>
+            <div class="about-body">
+                <div class="about-quote">
+                    <div class="quote-header">
+                        Less, but better - 
+                    </div>
+                    because it concentrates on the essential aspects, <br>
+                    and the products are not burdened with non-essentials. <br>
+                    Back to purity, back to simplicity.
+                </div>
+                <div class="author">
+                    - <i>Dieter Rams</i>
+                </div>
+            </div>
+            <div class="about-text">
+                I believe websites should be focused on functionality and user experience, rather than aesthetics and fancy animations.
+            </div>
+            <div class="about-arrow">
+                <a href="#projects" class="arrow-hover">
+                    ↓
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="projects">
+            <h1 class="projects-header gradient-text">
+                Personal Projects
+            </h1>
+            <div class="projects-photos">
+                <div class="projects-upper">
+                    <img src="img/71mvTROy+CL._AC_UF1000,1000_QL80_.jpg" width="400" height="250">
+                    <img src="img/71mvTROy+CL._AC_UF1000,1000_QL80_.jpg" width="400" height="250">
+                </div>
+                <div class="projects-lower">
+                    <img src="img/71mvTROy+CL._AC_UF1000,1000_QL80_.jpg" width="300" height="250">
+                    <img src="img/71mvTROy+CL._AC_UF1000,1000_QL80_.jpg" width="200" height="250">
+                    <img src="img/71mvTROy+CL._AC_UF1000,1000_QL80_.jpg" width="296" height="250">
+                </div>
+            </div>
+            <a href="https://github.com/kevindkchan" class="button">
+                <div class="button-text">
+                    See More
+                </div>
+            </a>
+        </section>
+        <hr>
+        <section id="contact" class="contact">
+            <h1 class="contact-header">
+                CONTACT ME
+            </h1>
+            <div class="contact-form">
+                <form action="action_page.php">
+                    <label for="fname">FIRST</label>
+                    <input type="text" id="fname" name="firstname" placeholder="NAME">
+                    <label for="lname">LAST</label>
+                    <input type="text" id="lname" name="lastname" placeholder="NAME">
+                    <label for="who">WHO</label>
+                    <select id="who" name="who">
+                        <option value="" disabled selected>ARE YOU</option>
+                        <option value="recruiter">Recruiter</option>
+                        <option value="client">Potential Client</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <label for="subject">WHAT</label>
+                    <textarea id="subject" name="subject" placeholder="DO YOU WANT" style="height:200px"></textarea>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/kevindkchan/" class="link">
+                    <img src="img/linkedin-icon-1-logo-png-transparent.png" style="margin-right: 10px;" width="20" height="20">
+                </a>
+                <a href="https://github.com/kevindkchan" class="link">
+                    <img src="img/github-icon-1-logo-png-transparent.png" style="margin-left: 10px;" width="20" height="20">
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section class="footer">
+            <div class="copyright"></div>
+                Copyright © Kevin Chan 2024
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,30 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 a, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: inherit;
+    color: inherit;
 }
 
-.loader {
-    width: fit-content;
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 32px;
-    clip-path: inset(0 3ch 0 0);
-    animation: l4 1s steps(4) infinite;
-  }
-  .loader:before {
-    content:"Revamping..."
-  }
-  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 64px;
+}
 
-h1 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+hr {
+    border: 0;
+    height: 1px;
+    opacity: 0.5;
+    margin:18px 0;
+    position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+/* universal */
+
+.arrow-hover {
+    opacity: 0.4;
+    font-size: 20px;
+}
+
+.arrow-hover:hover {
+    opacity: 1;
+}
+
+/* navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    opacity: 0.4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    padding-left: 256px;
+    padding-right: 256px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hover:hover {
+    animation-name: hover;
+    animation-duration: 1s;
+    opacity: 0.6;
+}
+
+/* animations */
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes hover {
+    0% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+@keyframes button-hover {
+    0% { box-shadow: 2px 1000px 1px #fff inset; }
+    100% { box-shadow: none; }
+}
+
+@keyframes button-text-hover {
+    0% { background-image: linear-gradient(45deg, red, blue); }
+    100% { background-image: none;
+           background-color: white; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+}
+
+@keyframes link-fade-in {
+    0% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+/* pages */
+
+.pages {
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    /* scroll-snap-align: start; */ /* it wont work with scroll behavior!!!! */
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marble {
+    animation-name: fade-in;
+    animation-duration: 5s;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+}
+
+.home-text {
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #f0f, #0ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 128px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .0em; /* Adjust as needed */
+    animation: 
+      typing 0.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.intro {
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+.home-arrow {
+    margin-top: 48px;
+}
+
+/* about */
+
+.about {
+    background: #e1dcd0;
+    color: #32302f
+}
+
+.about-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-header {
+    padding: 64px;
+    font-size: 64px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.about-quote {
+    font-size: 24px;
+    line-height: 2;
+    margin-right: 248px;
+}
+
+.quote-header {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 16px;
+    margin-right: 256px;
+    margin-top: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-text {
+    margin-top: 128px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.about-arrow {
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* projects */
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px;
+}
+
+.projects-header {
+    font-size: 32px;
+}
+
+.gradient-text {
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, red, blue);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.button {
+    display: inline-block;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    border-radius: 100rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, red, blue);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.button-text {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, red, blue);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.button:hover {
+    animation-name: button-hover;
+    animation-duration: 0.25s;
+    box-shadow: none;
+}
+
+.button-text:hover {
+    animation-name: button-text-hover;
+    animation-duration: 0.25s;
+    background-image: none;
+    background-color: white;
+}
+
+/* contact */
+
+.contact {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+}
+
+.contact-header {
+    font-size: 32px;
+}
+
+/* contact form */
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+  
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: red;
+    color: white
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+    opacity: 0.4;
+}
+
+.link:hover {
+    animation-name: link-fade-in;
+    animation-duration: 0.2s;
+    opacity: 1;
+}
+
+/* footer */
+
+.footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    font-size: 14px;
 }
