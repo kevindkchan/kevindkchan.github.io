@@ -1,0 +1,27 @@
+.hero {
+    height: 100vh;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 128px;
+}
+
+.hero p {
+    position: absolute;
+    font-size: 32px;
+    margin-top: 156px;
+    margin-right: 164px;
+}
+
+.hero img {
+    margin-top: 128px;
+    margin-right: 384px;
+}
