@@ -1,4 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+li {
+    margin: 32px 0
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* animations */
+@keyframes hover {
+    0%   {height: 100vh;}
+    100% {height: 25vh;}
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
 .hero {
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     height: 100vh;
     background: #ffffff;
     color: #000000;
@@ -6,11 +55,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero h1 {
     position: absolute;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 128px;
 }
 
@@ -22,6 +71,28 @@
 }
 
 .hero img {
-    margin-top: 128px;
-    margin-right: 384px;
+    margin-top: 132px;
+    margin-right: 396px;
+}
+
+.hero img:hover {
+    opacity: 0.5;
+}
+
+/* about */
+
+.about {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 196px;
+}
+
+.about-text {
+    position: absolute;
+    font-size: 32px;
+}
+
+.sentence {
+    color: #C5C6C7;
 }
