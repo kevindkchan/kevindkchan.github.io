@@ -25,10 +25,26 @@ main {
     flex-direction: column;
 }
 
+.arrow {
+    font-size: 24px;
+    opacity: 0.4;
+}
+
+.arrow:hover {
+    animation-name: hover;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+
 /* animations */
-@keyframes hover {
+@keyframes slide {
     0%   {height: 100vh;}
     100% {height: 25vh;}
+}
+
+@keyframes hover {
+    0%   {opacity: 0.4;}
+    100% {opacity: 1;}
 }
 
 .header {
@@ -44,7 +60,7 @@ main {
   }
 
 .hero {
-    animation-name: hover;
+    animation-name: slide;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -82,7 +98,7 @@ main {
 /* about */
 
 .about {
-    height: 75vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     margin-left: 196px;
@@ -95,4 +111,16 @@ main {
 
 .sentence {
     color: #C5C6C7;
+}
+
+.about-arrow {
+    height: 10vh;
+    text-align: center;
+}
+
+/* works */
+
+.works {
+    height: 100vh;
+    background: #F7F7F7;
 }
