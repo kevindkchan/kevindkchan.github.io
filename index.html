@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keuin</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        @font-face {
+            font-family: OPTIEngraversOldEnglish;
+            src: url(fonts/OPTIEngraversOldEnglish.otf);
+        }
+
+            p { font-family: OPTIEngraversOldEnglish, serif; }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -19,9 +27,9 @@
     </div>
     <main>
         <section id="hero" class="hero">
-            <h1>keu·in</h1>
-            <p>[kev-in] <b><i>noun</i></b></p>
-            <img src="img/Speaker_Icon.svg" width="36">
+            <h1>keu<span class="fade-in">·</span>in</h1>
+            <p class="fade-in">[kev-in] <b><i>noun</i></b></p>
+            <img class="fade-in" src="img/Speaker_Icon.svg" width="36">
         </section>
         <section id="about" class="about">
             <div class="about-text">
@@ -56,7 +64,9 @@
             <a href="#works" class="arrow">↓</a>
         </section>
         <section id="works" class="works">
-
+            <div class="works-text">
+                The Kevin Chan Times
+            </div>
         </section>
     </main>
     <footer>
