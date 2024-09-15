@@ -42,6 +42,11 @@ main {
     100% {height: 25vh;}
 }
 
+@keyframes in {
+    0%   {margin-left: 268px;}
+    100% {margin-left: 348px;}
+}
+
 @keyframes fade-in {
     0%   {opacity: 0;}
     100% {opacity: 1;}
@@ -67,7 +72,7 @@ main {
 .hero {
     animation-name: slide;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     height: 100vh;
     background: #ffffff;
@@ -82,6 +87,7 @@ main {
 .hero h1 {
     position: absolute;
     font-size: 128px;
+    margin-right: 104px;
 }
 
 .hero p {
@@ -103,10 +109,18 @@ main {
 
 .fade-in {
     animation-name: fade-in;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.in {
+    margin-left: 268px;
+    animation-name: in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 /* about */
