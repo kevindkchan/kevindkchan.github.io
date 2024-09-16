@@ -43,8 +43,8 @@ main {
 }
 
 @keyframes in {
-    0%   {margin-left: 268px;}
-    100% {margin-left: 348px;}
+    0%   {margin-left: 224px;}
+    100% {margin-left: 306px;}
 }
 
 @keyframes fade-in {
@@ -58,9 +58,10 @@ main {
 }
 
 .header {
+    height: 0vh;
     font-family: Arial, Helvetica, sans-serif;
     position: sticky;
-    top: 0;
+    top: 32px;;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -103,8 +104,12 @@ main {
     margin-right: 396px;
 }
 
-.hero img:hover {
+.hero a:hover {
     opacity: 0.5;
+}
+
+.hero-dot {
+    opacity: 0;
 }
 
 .fade-in {
@@ -116,7 +121,7 @@ main {
 }
 
 .in {
-    margin-left: 268px;
+    margin-left: 224px;
     animation-name: in;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -157,6 +162,36 @@ main {
     display: flex;
     justify-content: center;
     font-family: OPTIEngraversOldEnglish;
-    font-size: 48px;
-    margin-top: 48px;
+    font-size: 84px;
+    font-weight: bold;
+    margin-top: 64px;
+}
+
+.works-box {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: 1px black;
+    border-style: solid;
+    border-width: 3px;
+    padding: 16px;
+    margin-right: 1072px;
+    margin-top: 20px;
+}
+
+.works-line {
+    display: flex;
+    justify-content: center;
+    border: 1px black;
+    border-style: solid;
+    border-width: 2px;
+    border-left: none;
+    border-right: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-left: 322px;
+    margin-right: 322px;
 }
