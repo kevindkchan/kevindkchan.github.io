@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background: #525659;
 }
 
 a {
@@ -57,23 +58,27 @@ main {
     100% {opacity: 1;}
 }
 
+/* navbar */
+
 .header {
-    height: 0vh;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .87rem;
+    font-weight: 500;
     position: sticky;
-    top: 32px;;
-    background: transparent;
+    top: 0;
+    background: #323639;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 6px;
 }
 
-.header ul a {
-    margin: 8px;
+.header-logo a {
+    margin: 24px;
 }
+
+/* about */
 
 .hero {
     animation-name: slide;
@@ -81,6 +86,9 @@ main {
     animation-delay: 2s;
     animation-fill-mode: forwards;
     height: 100vh;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-top: 2px;
     background: #ffffff;
     color: #000000;
     display: flex;
@@ -136,15 +144,18 @@ main {
 /* about */
 
 .about {
+    background: #ffffff;
     height: 65vh;
     display: flex;
     justify-content: center;
-    margin-left: 196px;
+    margin-left: 128px;
+    margin-right: 128px;
 }
 
 .about-text {
     position: absolute;
     font-size: 32px;
+    margin-left: 196px;
 }
 
 .sentence {
@@ -154,6 +165,10 @@ main {
 .about-arrow {
     height: 10vh;
     text-align: center;
+    background: #ffffff;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-bottom: 8px;
 }
 
 /* works */
@@ -161,6 +176,10 @@ main {
 .works {
     height: 100vh;
     background: #FFFFFF;
+    margin-top: 8px;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-bottom: 8px;
 }
 
 .works-text {
