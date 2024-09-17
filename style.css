@@ -60,6 +60,7 @@ main {
 .header {
     height: 0vh;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     position: sticky;
     top: 32px;;
     background: transparent;
@@ -68,7 +69,11 @@ main {
     align-items: center;
     padding-left: 48px;
     padding-right: 48px;
-  }
+}
+
+.header ul a {
+    margin: 8px;
+}
 
 .hero {
     animation-name: slide;
