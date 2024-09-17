@@ -72,10 +72,21 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 6px;
+    padding-left: 24px;
 }
 
-.header-logo a {
-    margin: 24px;
+.header-text {
+    margin-left: 24px;
+}
+
+.menu {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.menu:hover {
+    background-color: #424649;
 }
 
 /* about */
