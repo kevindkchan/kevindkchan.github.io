@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #000000;
 }
 
 a {
@@ -13,8 +12,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .navbar {
-    font-family: HongKong;
-    color: white;
+    font-family: "Inter", sans-serif;
     font-size: 12px;
     position: sticky;
     top: 0;
@@ -22,4 +20,15 @@ a, a:visited, a:hover, a:active {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    opacity: 0.5;
+}
+
+.hero {
+    height: 50vh;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
