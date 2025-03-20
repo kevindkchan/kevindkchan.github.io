@@ -34,8 +34,10 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
     margin: 1em 0;
+    margin-left: 256px;
+    margin-right: 256px;
     padding: 0;
 }
 
@@ -68,7 +70,6 @@ hr {
     display: none;
     top: 50%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
 .sticky .sticky-icon {
