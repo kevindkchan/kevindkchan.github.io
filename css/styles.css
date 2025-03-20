@@ -27,7 +27,7 @@ ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
 
 hr {
@@ -60,7 +60,22 @@ hr {
 .navbar {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
+
+.sticky-icon {
+    display: none;
+    top: 50%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.sticky .sticky-icon {
+    display: block;
+    opacity: 1;
+}
+
 
 button {
     background-color: #000000;

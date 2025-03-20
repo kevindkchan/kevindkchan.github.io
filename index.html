@@ -6,8 +6,8 @@
     <title>Kevin Chan's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -17,22 +17,27 @@
             </a>
         </div>
     </div>
-    <div class="navbar">
+    <hr/>
+    <div id="navbar" class="navbar">
         <ul>
             <a href="projects.html">PROJECTS</a>
             <a href="about.html">ABOUT</a>
+            <div id="sticky-icon" class="sticky-icon">
+                <a href="index.html">
+                    <img src="img/stamp.png" alt="stamp" width="30" height="40">
+                </a>
+            </div>
             <a href="https://github.com/kevindkchan" target="_blank" rel="noopener noreferrer">
-                <img src="img/25231.png" alt="stamp" width="34" height="34">
+                <img src="img/25231.png" alt="github" width="34" height="34">
             </a>
             <a href="https://www.linkedin.com/in/kevindkchan/" target="_blank" rel="noopener noreferrer">
-                <img src="img/linkedin_black_logo_icon_147114.png" alt="stamp" width="34" height="34">
+                <img src="img/linkedin_black_logo_icon_147114.png" alt="linkedin" width="34" height="34">
             </a>
             <button class="resume-button">
                 Resume
             </button>
         </ul>
     </div>
-    <hr/>
     <div class="hero">
         <div class="hero-header">
                 <b>Ke·vin Chan</b>
@@ -74,5 +79,6 @@
             Copyright © 2025 Kevin Chan
         </div>
     </div>
+    <script type="text/javascript" src="navbar.js"></script>
 </body>
 </html>
