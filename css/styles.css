@@ -46,15 +46,20 @@ hr {
 .header {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 12px;
-    padding-left: 298px;
-    padding-right: 298px;
 }
 
 .logo {
     opacity: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -62,7 +67,7 @@ button {
     border: none;
     border-radius: 8px;
     color: white;
-    padding: 12px 12px;
+    padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -87,6 +92,72 @@ ul {
     font-style: normal;
 }
 
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    margin-left: 648px;
+    margin-right: 648px;
+}
+
+.hero-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 96px;
+}
+
+.hero-subheader {
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.hero-text {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    opacity: 75%;
+    margin-top: 32px;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 75%;
+    margin-bottom: 36px;
+    gap: 4px;
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 42px;
+    gap: 24px;
+}
+
+.projects-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
 /* Footer */
 
 .footer {
@@ -95,6 +166,8 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
 
 .copyright {
@@ -102,5 +175,5 @@ ul {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    opacity: 0.75;
+    opacity: 75%;
 }
