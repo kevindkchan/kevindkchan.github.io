@@ -27,16 +27,22 @@ ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
     margin: 1em 0;
+    margin-left: 256px;
+    margin-right: 256px;
     padding: 0;
+}
+
+.active {
+    opacity: 100%;
 }
 
 /* Animations */
@@ -49,6 +55,7 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 12px;
+    padding-top: 32px;
 }
 
 .logo {
@@ -60,18 +67,34 @@ hr {
 .navbar {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+.sticky-icon {
+    display: none;
+    top: 50%;
+    opacity: 0;
+}
+
+.sticky .sticky-icon {
+    display: block;
+    opacity: 1;
+}
+
 
 button {
     background-color: #000000;
     border: none;
     border-radius: 8px;
     color: white;
-    padding: 12px 12px;
+    padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    opacity: 50%;
     transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -webkit-transition: opacity 0.5s ease-in-out;
