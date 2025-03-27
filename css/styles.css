@@ -7,27 +7,17 @@ a {
     text-decoration: black;
     font-size: 16px;
     opacity: 50%;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
-a:hover {
-    opacity: 100%;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-}
-
 ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 }
 
 hr {
@@ -45,119 +35,87 @@ hr {
     opacity: 100%;
 }
 
-/* Animations */
-
-/* Header */
-
-.header {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    padding-top: 32px;
-}
-
 .logo {
-    opacity: 100%;
+    filter: saturate(0%);
+    transition: filter 0.2s ease-in-out;
+    -moz-transition: filter 0.2s ease-in-out;
+    -webkit-transition: filter 0.2s ease-in-out;
 }
 
-/* Navbar */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.logo:hover {
+    filter:saturate(100%);
+    transition: filter 0.2s ease-in-out;
+    -moz-transition: filter 0.2s ease-in-out;
+    -webkit-transition: filter 0.2s ease-in-out;
 }
 
-.sticky-icon {
-    display: none;
-    top: 50%;
-    opacity: 0;
-}
-
-.sticky .sticky-icon {
-    display: block;
-    opacity: 1;
-}
-
-
-.button {
-    background-color: #000000;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 7px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+.section-header {
+    margin-left: 488px;
+    margin-right: 488px;
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    opacity: 50%;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
 }
 
-.button:hover {
-    color: white;
-    opacity: 100%;
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 128px;
+    margin-bottom: 48px;
+    margin-left: 488px;
+    margin-right: 488px;
 }
 
-.resume {
-    margin-bottom: 4px;
-}
-
-ul {
+.header-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 20px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-}
-
-/* Hero */
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 96px;
-    margin-bottom: 96px;
-    margin-left: 712px;
-    margin-right: 648px;
-}
-
-.hero-header {
-    font-family: 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 96px;
-}
-
-.hero-subheader {
-    font-family: 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 32px;
-}
-
-.hero-text {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
+    margin-left: 12px;
     opacity: 75%;
-    margin-top: 32px;
+}
+
+.header-subtext {
+    font-size: 16px;
+    opacity: 75%;
+    font-weight: 500;
+}
+
+.header-bottomtext {
+    margin-top: auto;
+    font-size: 16px;
+    opacity: 75%;
+    font-weight: 500;
+}
+
+ul {
+    margin-left: auto;
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    margin-left: 488px;
+    margin-right: 488px;
+}
+
+.projects img {
+    border-radius: 3%;
+}
+
+.right {
+    margin-left: auto;
 }
 
 /* Skills */
@@ -167,26 +125,14 @@ ul {
     justify-content: center;
     align-items: center;
     opacity: 75%;
-    margin-bottom: 36px;
     gap: 4px;
 }
 
-/* Projects */
+/* Stuff */
 
-.projects {
+.stuff {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 64px;
-    margin-bottom: 42px;
-    gap: 24px;
-}
-
-.projects-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 42px;
 }
 
 /* Footer */
@@ -198,13 +144,5 @@ ul {
     align-items: center;
     gap: 12px;
     margin-top: 42px;
-    margin-bottom: 42px;
-}
-
-.copyright {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    opacity: 75%;
+    margin-bottom: 128px;
 }
