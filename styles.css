@@ -1,12 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    margin-left: 488px;
+    margin-right: 488px;
 }
 
 a {
     text-decoration: black;
     font-size: 16px;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 a, a:visited, a:hover, a:active {
@@ -26,13 +28,21 @@ hr {
     border: 0;
     border-top: 1px solid #ccc; 
     margin: 1em 0;
-    margin-left: 488px;
-    margin-right: 488px;
     padding: 0;
 }
 
-.active {
-    opacity: 100%;
+u {
+    text-decoration-color: #ccc;
+}
+
+::-moz-selection {
+    background: lightgrey;
+    color: rgba(0, 0, 0, 1);
+}
+
+::selection {
+    background: lightgrey;
+    color: rgba(0, 0, 0, 1);
 }
 
 .logo {
@@ -50,13 +60,122 @@ hr {
 }
 
 .section-header {
-    margin-left: 488px;
-    margin-right: 488px;
     font-size: 16px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.section-subheader {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+/* Animations */
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in1 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.fade-in2 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+.fade-in3 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.fade-in4 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2.5s;
+}
+
+.fade-in5 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+.fade-in6 {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3.5s;
+}
+
+/* Compatibility */
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    ul {
+        margin-right: auto;
+    }
+
+    hr {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .section-header {
+        margin-left: 12px;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .projects {
+        flex-direction: column;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+.active {
+    opacity: 100%;
 }
 
 /* Header */
@@ -66,8 +185,10 @@ hr {
     justify-content: flex-end;
     margin-top: 128px;
     margin-bottom: 48px;
-    margin-left: 488px;
-    margin-right: 488px;
+}
+
+.left {
+    display: flex;
 }
 
 .header-text {
@@ -80,20 +201,20 @@ hr {
     font-weight: 600;
     font-style: normal;
     margin-left: 12px;
-    opacity: 75%;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .header-subtext {
     font-size: 16px;
-    opacity: 75%;
     font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .header-bottomtext {
     margin-top: auto;
     font-size: 16px;
-    opacity: 75%;
     font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -106,8 +227,6 @@ ul {
     display: flex;
     justify-content: flex-end;
     margin-top: 24px;
-    margin-left: 488px;
-    margin-right: 488px;
 }
 
 .projects img {
@@ -124,8 +243,9 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 75%;
-    gap: 4px;
+    gap: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 /* Stuff */
@@ -133,6 +253,8 @@ ul {
 .stuff {
     display: flex;
     justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 /* Footer */
