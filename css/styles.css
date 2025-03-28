@@ -72,12 +72,12 @@ u {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .section-subheader {
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
     font-weight: 500;
     margin-top: 2px;
 }
@@ -196,6 +196,10 @@ u {
     display: flex;
 }
 
+.logo {
+    opacity: 0.75;
+}
+
 .header-text {
     display: flex;
     justify-content: flex-end;
@@ -206,20 +210,20 @@ u {
     font-weight: 600;
     font-style: normal;
     margin-left: 12px;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .header-subtext {
     font-size: 16px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .header-bottomtext {
     margin-top: auto;
     font-size: 16px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -266,7 +270,7 @@ ul {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 4px;
 }
 
@@ -276,7 +280,7 @@ ul {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 /* Skills */
