@@ -1,14 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    margin-left: 488px;
-    margin-right: 488px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 944px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: black;
     font-size: 16px;
-    opacity: 75%;
+    opacity: 50%;
 }
 
 a, a:visited, a:hover, a:active {
@@ -72,6 +79,7 @@ u {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
+    margin-top: 2px;
 }
 
 /* Animations */
@@ -135,20 +143,16 @@ u {
 
 /* Compatibility */
 
-@media (max-width: 600px) {
-    body {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 24px;
     }
+}
 
+@media (max-width: 600px) {
     ul {
         margin-right: auto;
-    }
-
-    hr {
-        margin-left: 12px;
-        margin-right: 12px;
     }
 
     .section-header {
@@ -167,6 +171,7 @@ u {
         flex-direction: column;
         margin-left: 12px;
         margin-right: 12px;
+        gap: 24px;
     }
 
     .project {
@@ -225,16 +230,53 @@ ul {
 
 .projects {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 24px;
 }
 
+.bottom {
+    margin-bottom: 64px;
+}
+
 .projects img {
+    transition: transform 0.3s ease-in-out;
     border-radius: 3%;
+}
+
+.projects img:hover {
+    transform: scale(1.02);
 }
 
 .right {
     margin-left: auto;
+}
+
+.project {
+    width: 48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.project-header {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 4px;
+}
+
+.project-subheader {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Skills */
