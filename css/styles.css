@@ -291,6 +291,11 @@ ul {
     gap: 2px;
 }
 
+.project-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .project-header {
     font-size: 16px;
     font-family: "Inter", sans-serif;
@@ -299,6 +304,15 @@ ul {
     font-style: normal;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 4px;
+}
+
+.project-year {
+    margin-top: 4px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .project-subheader {
