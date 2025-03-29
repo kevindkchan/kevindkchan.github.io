@@ -289,9 +289,30 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 64px;
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.frameworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 /* Stuff */
@@ -299,8 +320,8 @@ ul {
 .stuff {
     display: flex;
     justify-content: center;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 /* Footer */
