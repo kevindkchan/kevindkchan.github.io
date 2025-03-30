@@ -287,6 +287,21 @@ ul {
     margin-left: auto;
 }
 
+/* Club */
+
+.club {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 24px;
+    margin-top: 12px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* Projects */
 
 .projects {
