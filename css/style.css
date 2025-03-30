@@ -79,7 +79,7 @@ u {
 }
 
 .section-subheader {
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     font-weight: 500;
     margin-top: 2px;
@@ -232,14 +232,14 @@ u {
 }
 
 .header-subtext {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.4);
 }
 
 .header-bottomtext {
     margin-top: auto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.4);
 }
@@ -247,6 +247,44 @@ u {
 ul {
     margin-left: auto;
     opacity: 50%;
+}
+
+/* Education */
+
+.education {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.ualberta {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.degree {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 2px;
+}
+
+.year {
+    margin-top: 2px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
 }
 
 /* Projects */
@@ -316,7 +354,7 @@ ul {
 }
 
 .project-subheader {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
