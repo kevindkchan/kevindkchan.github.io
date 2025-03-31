@@ -50,6 +50,14 @@ u {
     text-decoration-color: #ccc;
 }
 
+:root {
+    color-scheme: light;
+}
+
+body.dark-mode {
+    color-scheme: dark;
+}
+
 ::-moz-selection {
     background: lightgrey;
     color: rgba(0, 0, 0, 1);
