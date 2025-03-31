@@ -31,6 +31,14 @@ body {
     background-color: rgba(180, 180, 180, 0.9);
 }
 
+body.dark-mode #cursor {
+    background-color: rgba(180, 180, 180, 0.9);
+}
+
+body.dark-mode #cursor.hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -83,34 +91,29 @@ body.dark-mode {
 
 /* Custom Scrollbar because color scheme doesnt wanna work */
 
-body.dark-mode::-webkit-scrollbar {
-    width: 12px;
+.scroll-wrapper {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  
+.scroll-wrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
 }
   
-body.dark-mode::-webkit-scrollbar-track {
-    background: #121212;
-}
-  
-body.dark-mode::-webkit-scrollbar-thumb {
-    background: #444;
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 6px;
-    border: 3px solid #121212;
+    transition: background-color 0.3s ease-in-out;
 }
 
-body:not(.dark-mode)::-webkit-scrollbar {
-    width: 12px;
+.scroll-wrapper.scrolling::-webkit-scrollbar-thumb {
+    background-color: rgba(180, 180, 180, 0.4);
 }
-  
-body:not(.dark-mode)::-webkit-scrollbar-track {
-    background: #fff;
+
+body:not(.dark-mode) .scroll-wrapper.scrolling::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.4);
 }
-  
-body:not(.dark-mode)::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 6px;
-    border: 3px solid #fff;
-}
-  
 
 ::-moz-selection {
     background: lightgrey;
@@ -464,6 +467,11 @@ body:not(.dark-mode) .logo:hover {
 /* Tablet */
 
 @media (max-width: 1024px) {
+
+    #cursor {
+        display: none;
+    }
+
     .container {
         max-width: 100%;
         padding: 0 24px;
@@ -581,8 +589,6 @@ ul {
 }
 
 .tip {
-    position: absolute;
-    top: 256px;
     font-size: 12px;
     font-weight: 500;
     font-family: "Roboto Mono", monospace;
@@ -774,4 +780,12 @@ ul {
     gap: 12px;
     margin-top: 42px;
     margin-bottom: 128px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
