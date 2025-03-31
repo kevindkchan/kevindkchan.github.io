@@ -7,11 +7,33 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: none;
+}
+
+/* Cursor */
+
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
+}
+
+#cursor.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(180, 180, 180, 0.9);
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-  }
+}
 
 .container {
     max-width: 944px;
@@ -23,6 +45,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: none;
 }
 
 a, a:visited, a:hover, a:active {
@@ -153,10 +176,6 @@ body:not(.dark-mode)::-webkit-scrollbar-thumb {
     color: rgba(0, 0, 0, 0.4);
     font-weight: 500;
     margin-top: 2px;
-}
-
-.toggle {
-    cursor: pointer;
 }
 
 /* Tooltip */
