@@ -234,6 +234,10 @@ u {
         padding: 0 24px;
     }
 
+    .mobile {
+        display: none;
+    }
+
     .tablet {
         display: block;
     }
@@ -250,6 +254,10 @@ u {
 
     .mobile { 
         display: block;
+    }
+
+    .tablet {
+        display: none;
     }
 
     .desktop { 
