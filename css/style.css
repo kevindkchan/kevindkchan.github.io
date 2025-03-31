@@ -6,6 +6,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 *, *::before, *::after {
@@ -115,6 +116,10 @@ u {
     margin-top: 2px;
 }
 
+.toggle {
+    cursor: pointer;
+}
+
 /* Tooltip */
 
 .tooltip {
@@ -217,6 +222,176 @@ u {
 
 /* Compatibility */
 
+/* Auto Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    hr {
+        border-top: 1px solid #444;
+    }
+
+    u {
+        text-decoration-color: #666;
+    }
+
+    .tip {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .section-header,
+    .ualberta,
+    .project-header {
+        color: #cccccc;
+    }
+
+    .section-subheader,
+    .degree,
+    .header-subtext,
+    .header-bottomtext,
+    .project-subheader {
+        color: #aaaaaa;
+    }
+
+    .year,
+    .project-year {
+        color: #999999;
+    }
+
+    .header-text {
+        color: #cccccc;
+    }
+
+    .tooltip .tooltiptext {
+        background-color: rgba(33, 33, 33, 0.9);
+        color: #cccccc;
+        border-color: #666;
+    }
+
+    .projects img {
+        border-color: #444;
+    }
+
+    .logo,
+    .logo2 {
+        filter: brightness(0) invert(1);
+    }
+
+    .logo:hover,
+    .logo2:hover {
+        filter: brightness(1.1) saturate(100%);
+    }
+
+    .club {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode hr {
+    border-top: 1px solid #444;
+}
+
+body.dark-mode u {
+    text-decoration-color: #666;
+}
+
+body.dark-mode .section-header,
+body.dark-mode .ualberta,
+body.dark-mode .project-header,
+body.dark-mode .header-text {
+    color: #ccc;
+}
+
+body.dark-mode .section-subheader,
+body.dark-mode .degree,
+body.dark-mode .header-subtext,
+body.dark-mode .header-bottomtext,
+body.dark-mode .project-subheader {
+    color: #aaa;
+}
+
+body.dark-mode .year,
+body.dark-mode .project-year {
+    color: #999;
+}
+
+body.dark-mode .tooltip .tooltiptext {
+    background-color: rgba(33, 33, 33, 0.9);
+    color: #ccc;
+    border-color: #666;
+}
+
+body.dark-mode .projects img {
+    border-color: #444;
+}
+
+body.dark-mode .logo,
+body.dark-mode .logo2 {
+  filter: brightness(0) invert(1);
+}
+
+body.dark-mode .logo:hover,
+body.dark-mode .logo2:hover {
+    filter: brightness(1.1) saturate(100%);
+}
+
+body.dark-mode .tip {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .club {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Light Mode */
+
+body:not(.dark-mode) {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body:not(.dark-mode) hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+body:not(.dark-mode) u {
+    text-decoration-color: #ccc;
+}
+
+body:not(.dark-mode) .tooltip .tooltiptext {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.4);
+    border-color: #ccc;
+}
+
+body:not(.dark-mode) .section-header {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body:not(.dark-mode) .section-subheader {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+body:not(.dark-mode) .logo,
+body:not(.dark-mode) .logo2 {
+  filter: saturate(0%) !important;
+}
+
+body:not(.dark-mode) .logo:hover {
+  filter: saturate(100%) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .fade-in1,
     .fade-in2,
@@ -227,6 +402,8 @@ u {
       animation: none !important;
     }
 }
+
+/* Tablet */
 
 @media (max-width: 1024px) {
     .container {
@@ -246,6 +423,8 @@ u {
         display: none;
     }
 }
+
+/* Mobile */
 
 @media (max-width: 640px) {
     ul {
@@ -399,12 +578,16 @@ ul {
     align-items: center;
     gap: 12px;
     margin-left: 18px;
-    margin-top: 12px;
+    margin-top: 6px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+}
+
+.club img {
+    margin-top: 4px;
 }
 
 /* Projects */
