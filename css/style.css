@@ -797,3 +797,15 @@ ul {
     font-weight: 500;
     font-style: normal;
 }
+
+.update {
+    font-size: 12px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.update-date {
+    margin-left: 6px;
+}
