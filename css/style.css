@@ -509,6 +509,14 @@ body:not(.dark-mode) .logo:hover {
         display: none;
     }
 
+    .tooltip .tooltiptext {
+        display: none;
+    }
+
+    .tooltip:hover .tooltiptext {
+        display: none;
+    }
+
     .header {
         justify-content: center;
         align-items: center;
