@@ -1,0 +1,13 @@
+# Dependency folders
+node_modules/
+
+# Parcel build output
+dist/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
