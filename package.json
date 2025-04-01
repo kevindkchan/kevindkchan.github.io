@@ -1,0 +1,25 @@
+{
+  "name": "kevindkchan.github.io",
+  "version": "1.0.0",
+  "description": "My 2025 Portfolio Site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindkchan/kevindkchan.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevindkchan/kevindkchan.github.io/issues"
+  },
+  "homepage": "https://github.com/kevindkchan/kevindkchan.github.io#readme",
+  "dependencies": {
+    "smooth-scrollbar": "^8.8.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}

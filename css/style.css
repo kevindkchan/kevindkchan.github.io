@@ -1,4 +1,7 @@
 html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
 }
@@ -8,6 +11,12 @@ body {
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: none;
+}
+
+#scroll-container {
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
 }
 
 /* Cursor */
@@ -87,32 +96,6 @@ u {
 
 body.dark-mode {
     color-scheme: dark;
-}
-
-/* Custom Scrollbar because color scheme doesnt wanna work */
-
-.scroll-wrapper {
-    overflow-y: scroll;
-    height: 100vh;
-  }
-  
-.scroll-wrapper::-webkit-scrollbar {
-    width: 6px;
-    background-color: transparent;
-}
-  
-.scroll-wrapper::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.scroll-wrapper.scrolling::-webkit-scrollbar-thumb {
-    background-color: rgba(180, 180, 180, 0.4);
-}
-
-body:not(.dark-mode) .scroll-wrapper.scrolling::-webkit-scrollbar-thumb {
-    background-color: rgba(128, 128, 128, 0.4);
 }
 
 ::-moz-selection {
@@ -602,6 +585,8 @@ ul {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    position: fixed;
+    top: 256px;
     color: rgba(0, 0, 0, 0.4);
 }
 
