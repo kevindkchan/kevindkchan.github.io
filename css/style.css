@@ -17,6 +17,15 @@ body.dark-mode {
     background-color: rgba(128, 128, 128, 0.8);
 }
 
+body:not(.no-gradient):not(.dark-mode) {
+    background: radial-gradient(#ffffff, #eeeeee);
+}
+
+body:not(.no-gradient).dark-mode {
+    background: radial-gradient(#121212, #000000);
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -126,7 +135,6 @@ u {
 
 #gradient {
     cursor: pointer;
-    margin-left: 12px;
 }
 
 .nogradient {
