@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="no-gradient no-shadows">
     <div class="container noselect">
 
         <div class="header fade-in1">
@@ -24,7 +24,7 @@
                     <div class="header-subtext">
                         Computing Science @ <u>University of Alberta</u>
                     </div>
-                    <div class="header-bottomtext gradient">
+                    <div class="header-bottomtext nogradient">
                         ⚲ Edmonton, Alberta, <a href="https://en.wikipedia.org/wiki/Canada" target="_blank" rel="noopener noreferrer">Canada</a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="tip desktop fade-in1">
-            hover over stuff to reveal their true colors, or <u id="reveal">reveal all colors</u> <u id="gradient">disable gradient text</u>
+            hover over stuff to reveal their true colors, or <u id="reveal">reveal all colors</u> <u id="gradient">enable raytracing</u> (works best in dark mode)
         </div>
         <div class="tip tablet fade-in1">
             click on stamp to toggle light and dark mode
@@ -261,7 +261,7 @@
 
         <div class="footer fade-in6">
             <div class="logo">
-                <img class="logo invert" src="img/stamp2.png" alt="stamp" width="50" height="75">
+                <img class="logo invert stamp" src="img/stamp2.png" alt="stamp" width="50" height="75">
             </div>
             <div class="copyright">
                 © Kevin Chan 2025
@@ -278,7 +278,7 @@
     <script src="js/main.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/reveal.js"></script>
-    <script src="js/gradient.js"></script>
+    <script src="js/raytracing.js"></script>
     <script src="js/update.js"></script>
 
 </body>

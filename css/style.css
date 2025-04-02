@@ -129,10 +129,27 @@ u {
     margin-left: 12px;
 }
 
+.nogradient {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+}
+
 body.no-gradient .gradient {
     background: none !important;
     -webkit-background-clip: initial !important;
     -webkit-text-fill-color: initial !important;
+}
+
+body.no-shadows .shadow,
+body.no-shadows .fade-in1,
+body.no-shadows .fade-in2,
+body.no-shadows .fade-in3,
+body.no-shadows .fade-in4,
+body.no-shadows .fade-in5,
+body.no-shadows .fade-in6 {
+    box-shadow: none !important;
+    text-shadow: none !important;
 }
 
 .revealed {
