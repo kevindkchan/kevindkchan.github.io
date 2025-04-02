@@ -890,6 +890,9 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .update {
