@@ -55,6 +55,21 @@ hr {
     padding: 0;
 }
 
+.line {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: block;
+    border: none;
+    height: 1px;
+    background: #ccc;
+    background: radial-gradient(circle, #ccc 0%, #fff 100%);
+}
+
+.dark-mode .line {
+    background: #444;
+    background: radial-gradient(circle, #666 0%, #121212 100%);
+}
+
 u {
     text-decoration-color: #ccc;
 }
@@ -91,6 +106,12 @@ u {
 
 .shadow {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gradient {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .revealed {
@@ -422,6 +443,12 @@ body:not(.dark-mode) u {
 
 body:not(.dark-mode) .container {
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark-mode) .gradient {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 body:not(.dark-mode) .shadow {
