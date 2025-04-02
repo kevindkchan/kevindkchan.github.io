@@ -407,6 +407,11 @@ body.dark-mode .shadow {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
+body.dark-mode .projects img:hover {
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
 body.dark-mode .section-header,
 body.dark-mode .ualberta,
 body.dark-mode .project-header,
@@ -744,15 +749,20 @@ body.dark-mode .tip u:hover {
     height: auto;
     display: block;
     box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
     border-radius: 3%;
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .projects img:hover {
     transform: scale(1.02);
+}
+
+.projects img:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .right {
