@@ -1,6 +1,8 @@
 const toggle = document.querySelector(".toggle");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const favicon = document.getElementById("favicon");
+const root = document.documentElement;
+const body = document.body;
 
 function updateFavicon(isDark) {
     if (favicon) {
@@ -8,16 +10,30 @@ function updateFavicon(isDark) {
     }
 }
 
-if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && prefersDark)) {
-    document.body.classList.add("dark-mode");
+function enableDarkMode() {
+    root.classList.add("dark-mode");
+    body.classList.add("dark-mode");
     updateFavicon(true);
-} else {
+}
+
+function disableDarkMode() {
+    root.classList.remove("dark-mode");
+    body.classList.remove("dark-mode");
     updateFavicon(false);
 }
 
+if (localStorage.getItem("theme") === "dark" || (!localStorage.getItem("theme") && prefersDark)) {
+    enableDarkMode();
+} else {
+    disableDarkMode();
+}
+
 toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    const isDark = document.body.classList.contains("dark-mode");
+    const isDark = !root.classList.contains("dark-mode");
+    if (isDark) {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    updateFavicon(isDark);
 });
