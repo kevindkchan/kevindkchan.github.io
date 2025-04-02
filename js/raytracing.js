@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const gradientToggle = document.getElementById("gradient");
     const stamp = document.querySelector('img.logo.toggle');
     const stamp2 = document.querySelector('img.logo.stamp');
+    const ualberta = document.querySelector('img.logo.uofa');
+    const esports = document.querySelector('img.logo.esports');
     const invertLogos = document.querySelectorAll('img.invert');
 
     function updateGradientState() {
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ? "enable raytracing" 
             : "disable raytracing";
 
-        // Swap stamp image
+        // Swap image
         stamp.src = isNoGradient 
             ? "img/stamp2.png" 
             : "img/stampreflect.png";
@@ -20,6 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
         stamp2.src = isNoGradient 
             ? "img/stamp2.png" 
             : "img/stampreflect.png";
+
+        ualberta.src = isNoGradient 
+            ? "img/ualberta.png" 
+            : "img/ualbertareflect.png";
+
+        esports.src = isNoGradient 
+            ? "img/esports.png" 
+            : "img/esportsreflect.png";
 
         // Toggle shadow class
         document.body.classList.toggle("no-shadows", isNoGradient);
