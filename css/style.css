@@ -27,6 +27,7 @@ body.dark-mode {
     margin-right: auto;
     padding: 0 24px;
     box-sizing: border-box;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -90,6 +91,10 @@ u {
 
 .shadow {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.revealed {
+    filter: saturate(100%) !important;
 }
 
 .logo {
@@ -258,6 +263,10 @@ u {
         text-decoration-color: #666;
     }
 
+    .container {
+        text-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+
     .shadow {
         box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     }
@@ -348,6 +357,10 @@ body.dark-mode u {
     text-decoration-color: #666;
 }
 
+body.dark-mode .container {
+    text-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
 body.dark-mode .shadow {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
@@ -407,6 +420,10 @@ body:not(.dark-mode) u {
     text-decoration-color: #ccc;
 }
 
+body:not(.dark-mode) .container {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 body:not(.dark-mode) .shadow {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -427,11 +444,11 @@ body:not(.dark-mode) .section-subheader {
 
 body:not(.dark-mode) .logo,
 body:not(.dark-mode) .logo2 {
-  filter: saturate(0%) !important;
+  filter: saturate(0%);
 }
 
 body:not(.dark-mode) .logo:hover {
-  filter: saturate(100%) !important;
+  filter: saturate(100%);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -580,6 +597,10 @@ ul {
     font-optical-sizing: auto;
     font-style: normal;
     color: rgba(0, 0, 0, 0.4);
+}
+
+#reveal {
+    cursor: pointer;
 }
 
 /* Education */
