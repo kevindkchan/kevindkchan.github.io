@@ -124,6 +124,17 @@ u {
     -webkit-text-fill-color: transparent;
 }
 
+#gradient {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+body.no-gradient .gradient {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+}
+
 .revealed {
     filter: saturate(100%) !important;
 }
@@ -633,6 +644,8 @@ ul {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    position: absolute;
+    top: 256px;
     color: rgba(0, 0, 0, 0.4);
 }
 

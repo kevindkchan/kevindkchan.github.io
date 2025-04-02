@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.logo, .logo2').forEach(el => {
             if (revealed) {
                 el.classList.add("revealed");
+                revealTrigger.textContent = "hide all colors"
             } else {
                 el.classList.remove("revealed");
+                revealTrigger.textContent = "reveal all colors"
             }
         });
     });
