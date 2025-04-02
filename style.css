@@ -647,10 +647,25 @@ ul {
     position: absolute;
     top: 256px;
     color: rgba(0, 0, 0, 0.4);
+    text-shadow: none;
 }
 
 #reveal {
     cursor: pointer;
+}
+
+#reveal:hover, 
+#gradient:hover,
+.tip u:hover {
+    color: rgba(0, 0, 0, 0.2);
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode #reveal:hover,
+body.dark-mode #gradient:hover,
+body.dark-mode .tip u:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Education */
