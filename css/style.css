@@ -17,6 +17,7 @@ body.dark-mode {
     background-color: rgba(128, 128, 128, 0.8);
 }
 
+/*
 body:not(.no-gradient):not(.dark-mode) {
     background: radial-gradient(#ffffff, #eeeeee);
 }
@@ -24,7 +25,7 @@ body:not(.no-gradient):not(.dark-mode) {
 body:not(.no-gradient).dark-mode {
     background: radial-gradient(#121212, #000000);
 }
-
+*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -87,6 +88,14 @@ hr {
 .dark-mode .line {
     background: #444;
     background: radial-gradient(circle, #666 0%, #121212 100%);
+}
+
+body.no-gradient:not(.dark-mode) .line {
+    background: #ccc;
+}
+
+body.no-gradient.dark-mode .line {
+    background: #444;
 }
 
 u {
@@ -172,7 +181,7 @@ body.no-shadows .fade-in6 {
 }
 
 .logo:hover {
-    filter:saturate(100%);
+    filter:saturate(100%) drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
     transition: filter 0.2s ease-in-out;
     -moz-transition: filter 0.2s ease-in-out;
     -webkit-transition: filter 0.2s ease-in-out;
@@ -527,6 +536,10 @@ body:not(.dark-mode) .logo2 {
 
 body:not(.dark-mode) .logo:hover {
   filter: saturate(100%);
+}
+
+body:not(.dark-mode) #gradient {
+    display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
