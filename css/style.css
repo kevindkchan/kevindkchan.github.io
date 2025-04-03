@@ -36,7 +36,7 @@ body:not(.no-gradient).dark-mode {
     margin-right: auto;
     padding: 0 24px;
     box-sizing: border-box;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .noselect {
@@ -165,7 +165,7 @@ body.no-shadows .fade-in6 {
 }
 
 .logo {
-    filter: saturate(0%);
+    filter: saturate(0%) drop-shadow(0 0 12px rgba(255, 255, 255, 0.1));
     transition: filter 0.2s ease-in-out;
     -moz-transition: filter 0.2s ease-in-out;
     -webkit-transition: filter 0.2s ease-in-out;
@@ -331,11 +331,11 @@ body.no-shadows .fade-in6 {
     }
 
     .container {
-        text-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
     }
 
     .shadow {
-        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
     }
 
     .tip {
@@ -425,7 +425,7 @@ body.dark-mode u {
 }
 
 body.dark-mode .container {
-    text-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .shadow {
@@ -493,11 +493,11 @@ body:not(.dark-mode) u {
 }
 
 body:not(.dark-mode) .container {
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 12px 6px rgba(0, 0, 0, 0.3);
 }
 
 body:not(.dark-mode) .gradient {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
