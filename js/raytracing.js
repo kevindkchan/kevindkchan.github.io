@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateGradientState() {
         const isNoGradient = document.body.classList.contains("no-gradient");
 
-        // Update toggle text
-        gradientToggle.textContent = isNoGradient 
-            ? "enable raytracing" 
-            : "disable raytracing";
-
         // Swap image
         stamp.src = isNoGradient 
             ? "img/stamp2.png" 

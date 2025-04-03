@@ -538,10 +538,6 @@ body:not(.dark-mode) .logo:hover {
   filter: saturate(100%);
 }
 
-body:not(.dark-mode) #gradient {
-    display: none;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .fade-in1,
     .fade-in2,
