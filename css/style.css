@@ -21,11 +21,11 @@ body.dark-mode {
 body:not(.no-gradient):not(.dark-mode) {
     background: radial-gradient(#ffffff, #eeeeee);
 }
+*/
 
 body:not(.no-gradient).dark-mode {
-    background: radial-gradient(#121212, #000000);
+    background: linear-gradient(to right, #000000, #121212, #000000);
 }
-*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -87,7 +87,7 @@ hr {
 
 .dark-mode .line {
     background: #444;
-    background: radial-gradient(circle, #666 0%, #121212 100%);
+    background: radial-gradient(circle, #666 0%, #0a0a0a 100%);
 }
 
 body.no-gradient:not(.dark-mode) .line {
