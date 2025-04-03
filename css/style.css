@@ -918,23 +918,34 @@ body.dark-mode .tip u:hover {
     margin-bottom: 128px;
 }
 
-.copyright {
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-text,
+.copyright,
+.update {
+    flex: 1;
     font-size: 12px;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.copyright {
+    text-align: center;
 }
 
 .update {
-    font-size: 12px;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    text-align: right;
 }
 
 .update-date {
