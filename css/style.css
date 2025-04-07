@@ -17,16 +17,6 @@ body.dark-mode {
     background-color: rgba(128, 128, 128, 0.8);
 }
 
-/*
-body:not(.no-gradient):not(.dark-mode) {
-    background: radial-gradient(#ffffff, #eeeeee);
-}
-*/
-
-body:not(.no-gradient).dark-mode {
-    background: linear-gradient(to right, #000000, #121212, #000000);
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -37,7 +27,6 @@ body:not(.no-gradient).dark-mode {
     margin-right: auto;
     padding: 0 24px;
     box-sizing: border-box;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .noselect {
@@ -82,19 +71,9 @@ hr {
     border: none;
     height: 1px;
     background: #ccc;
-    background: radial-gradient(circle, #ccc 0%, #fff 100%);
 }
 
 .dark-mode .line {
-    background: #444;
-    background: radial-gradient(circle, #666 0%, #0a0a0a 100%);
-}
-
-body.no-gradient:not(.dark-mode) .line {
-    background: #ccc;
-}
-
-body.no-gradient.dark-mode .line {
     background: #444;
 }
 
@@ -132,56 +111,19 @@ u {
     display: block;
 }
 
-.shadow {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.gradient {
-    background: -webkit-linear-gradient(#eee, #525252);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#gradient {
-    cursor: pointer;
-}
-
-.nogradient {
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: initial !important;
-}
-
-body.no-gradient .gradient {
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: initial !important;
-}
-
-body.no-shadows .shadow,
-body.no-shadows .fade-in1,
-body.no-shadows .fade-in2,
-body.no-shadows .fade-in3,
-body.no-shadows .fade-in4,
-body.no-shadows .fade-in5,
-body.no-shadows .fade-in6 {
-    box-shadow: none !important;
-    text-shadow: none !important;
-}
-
 .revealed {
     filter: saturate(100%) !important;
 }
 
 .logo {
-    filter: saturate(0%) drop-shadow(0 0 12px rgba(255, 255, 255, 0.1));
+    filter: saturate(0%);
     transition: filter 0.2s ease-in-out;
     -moz-transition: filter 0.2s ease-in-out;
     -webkit-transition: filter 0.2s ease-in-out;
 }
 
 .logo:hover {
-    filter:saturate(100%) drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+    filter:saturate(100%);
     transition: filter 0.2s ease-in-out;
     -moz-transition: filter 0.2s ease-in-out;
     -webkit-transition: filter 0.2s ease-in-out;
@@ -339,14 +281,6 @@ body.no-shadows .fade-in6 {
         text-decoration-color: #666;
     }
 
-    .container {
-        text-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-    }
-
-    .shadow {
-        box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-    }
-
     .tip {
         color: rgba(255, 255, 255, 0.7);
     }
@@ -433,19 +367,6 @@ body.dark-mode u {
     text-decoration-color: #666;
 }
 
-body.dark-mode .container {
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .shadow {
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .projects img:hover {
-    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.3);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
 body.dark-mode .section-header,
 body.dark-mode .ualberta,
 body.dark-mode .project-header,
@@ -499,20 +420,6 @@ body:not(.dark-mode) hr {
 
 body:not(.dark-mode) u {
     text-decoration-color: #ccc;
-}
-
-body:not(.dark-mode) .container {
-    text-shadow: 2px 12px 6px rgba(0, 0, 0, 0.3);
-}
-
-body:not(.dark-mode) .gradient {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-body:not(.dark-mode) .shadow {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body:not(.dark-mode) .tooltip .tooltiptext {
@@ -686,7 +593,6 @@ ul {
     position: absolute;
     top: 256px;
     color: rgba(0, 0, 0, 0.4);
-    text-shadow: none;
 }
 
 #reveal {
@@ -694,14 +600,12 @@ ul {
 }
 
 #reveal:hover, 
-#gradient:hover,
 .tip u:hover {
     color: rgba(0, 0, 0, 0.2);
     text-decoration-color: rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode #reveal:hover,
-body.dark-mode #gradient:hover,
 body.dark-mode .tip u:hover {
     color: rgba(255, 255, 255, 0.9);
     text-decoration-color: rgba(255, 255, 255, 0.9);
@@ -787,16 +691,11 @@ body.dark-mode .tip u:hover {
     border-style: solid;
     border-color: #ccc;
     border-width: 1px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .projects img:hover {
     transform: scale(1.02);
-}
-
-.projects img:hover {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .right {
