@@ -1,4 +1,8 @@
 const dateElement = document.getElementById('date');
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-const today = new Date().toLocaleDateString(undefined, options);
-dateElement.textContent = today;
+
+if (dateElement) {
+    const modified = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formatted = modified.toLocaleDateString(undefined, options);
+    dateElement.textContent = formatted;
+}
