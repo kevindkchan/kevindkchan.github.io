@@ -9,14 +9,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode {
-    background-color: rgba(180, 180, 180, 0.9);
-}
-
-body.dark-mode {
-    background-color: rgba(128, 128, 128, 0.8);
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -35,23 +27,6 @@ a {
 
 a, a:visited, a:hover, a:active {
     color: inherit;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-hr {
-    width: 100%;
-    max-width: 100%;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc; 
-    margin: 1em 0;
-    padding: 0;
 }
 
 .line {
@@ -147,10 +122,11 @@ u {
 }
 
 .section-subheader {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
     font-weight: 500;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 /* Tooltip */
@@ -271,10 +247,6 @@ u {
         text-decoration-color: #666;
     }
 
-    .tip {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
     .section-header,
     .ualberta,
     .project-header {
@@ -368,6 +340,7 @@ body.dark-mode .section-subheader,
 body.dark-mode .degree,
 body.dark-mode .header-subtext,
 body.dark-mode .header-bottomtext,
+body.dark-mode ul a,
 body.dark-mode .project-subheader {
     color: #aaa;
 }
@@ -473,6 +446,7 @@ body:not(.dark-mode) .logo:hover {
 @media (max-width: 640px) {
     ul {
         margin-right: auto;
+        flex-direction: row !important;
     }
 
     .mobile { 
@@ -499,6 +473,7 @@ body:not(.dark-mode) .logo:hover {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 64px !important;
     }
 
     .tip {
@@ -518,6 +493,10 @@ body:not(.dark-mode) .logo:hover {
     .skills {
         flex-direction: column;
     }
+
+    .footer {
+        margin-bottom: 64px;
+    }
 }
 
 .active {
@@ -529,8 +508,8 @@ body:not(.dark-mode) .logo:hover {
 .header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-top: 128px;
-    margin-bottom: 48px;
 }
 
 .left {
@@ -546,7 +525,6 @@ body:not(.dark-mode) .logo:hover {
     justify-content: flex-end;
     flex-direction: column;
     font-size: 20px;
-    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -554,10 +532,26 @@ body:not(.dark-mode) .logo:hover {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.header-toptext {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.role {
+    font-family: "Newsreader","Signifier","Times",serif;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
 .header-subtext {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.4);
+    margin-top: 1px;
 }
 
 .header-bottomtext {
@@ -571,7 +565,24 @@ body:not(.dark-mode) .logo:hover {
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
     margin-left: auto;
+}
+
+ul a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .tip {
@@ -581,7 +592,7 @@ ul {
     font-optical-sizing: auto;
     font-style: normal;
     position: absolute;
-    top: 256px;
+    top: 272px;
     color: rgba(0, 0, 0, 0.4);
 }
 
@@ -606,12 +617,12 @@ body.dark-mode .tip u:hover {
 .education {
     display: flex;
     justify-content: flex-end;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .ualberta {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -621,7 +632,7 @@ body.dark-mode .tip u:hover {
 
 .degree {
     font-size: 14px;
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -703,11 +714,12 @@ body.dark-mode .tip u:hover {
 .project-top {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .project-header {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -726,11 +738,13 @@ body.dark-mode .tip u:hover {
 
 .project-subheader {
     font-size: 14px;
-    font-family: "Inter", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: rgba(0, 0, 0, 0.4);
+    margin-top: 4px;
+    line-height: 20px;
 }
 
 /* Skills */
@@ -812,6 +826,7 @@ body.dark-mode .tip u:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    opacity: 0.6;
 }
 
 .footer-text,
@@ -819,22 +834,21 @@ body.dark-mode .tip u:hover {
 .update {
     flex: 1;
     font-size: 12px;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
 }
 
 .footer-text {
     text-align: left;
+    font-family: "Inter", sans-serif;
 }
 
 .copyright {
     text-align: center;
+    font-family: "Inter", sans-serif;
 }
 
 .update {
     text-align: right;
+    font-family: "Roboto Mono", monospace;
 }
 
 .update-date {

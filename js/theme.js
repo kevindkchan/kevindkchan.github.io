@@ -1,13 +1,18 @@
 const toggle = document.querySelector(".toggle");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const favicon = document.getElementById("favicon");
-const esports = document.getElementById("esports")
+const uofa = document.getElementById("uofa")
+const esports = document.getElementById("esports");
 const root = document.documentElement;
 const body = document.body;
 
 function updateImg(isDark) {
     if (favicon) {
         favicon.href = isDark ? "img/favicon-dark.ico" : "img/favicon-light.ico";
+    }
+
+    if (uofa) {
+        uofa.src = isDark ? "img/ualberta2.png" : "img/ualberta.png";
     }
 
     if (esports) {
