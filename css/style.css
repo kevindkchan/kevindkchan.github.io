@@ -76,6 +76,11 @@ u {
     display: block;
 }
 
+.footer-text .desktop,
+.update .desktop {
+    display: inline;
+}
+
 .revealed {
     filter: saturate(100%) !important;
 }
@@ -387,11 +392,16 @@ body:not(.dark-mode) .logo:hover {
     }
 
     .tablet {
-        display: block;
+        display: none;
     }
 
     .desktop {
-        display: none;
+        display: block;
+    }
+
+    .footer-text .desktop,
+    .update .desktop {
+        display: inline;
     }
 }
 
@@ -417,6 +427,11 @@ body:not(.dark-mode) .logo:hover {
     }
 
     .desktop { 
+        display: none;
+    }
+
+    .footer-text .desktop,
+    .update .desktop {
         display: none;
     }
 
