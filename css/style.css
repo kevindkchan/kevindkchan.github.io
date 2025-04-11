@@ -846,6 +846,7 @@ body.dark-mode .tip u:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
     margin-bottom: 42px;
 }
 
