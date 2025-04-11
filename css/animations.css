@@ -12,4 +12,5 @@
 .entrance {
     animation: blur-entrance 0.8s ease-out forwards;
     animation-delay: 0.1s;
+    opacity: 0;
 }
