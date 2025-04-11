@@ -171,65 +171,6 @@ u {
     -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-/* Animations */
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-.fade-in1 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1s;
-}
-
-.fade-in2 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
-}
-
-.fade-in3 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-}
-
-.fade-in4 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2.5s;
-}
-
-.fade-in5 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 3s;
-}
-
-.fade-in6 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 3.5s;
-}
-
 /* Compatibility */
 
 /* Auto Dark Mode */
@@ -263,6 +204,7 @@ u {
     }
 
     .year,
+    .view-button,
     .project-year {
         color: #999999;
     }
@@ -352,6 +294,7 @@ body.dark-mode .project-subheader {
 }
 
 body.dark-mode .year,
+body.dark-mode .view-button,
 body.dark-mode .project-year {
     color: #999;
 }
@@ -670,7 +613,6 @@ body.dark-mode .tip u:hover {
 
 .club {
     display: flex;
-    align-items: center;
     gap: 12px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -685,6 +627,21 @@ body.dark-mode .tip u:hover {
 }
 
 /* Projects */
+
+.projects-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-button {
+    font-size: 12px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: auto;
+}
 
 .projects {
     display: flex;
