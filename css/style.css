@@ -413,6 +413,10 @@ body:not(.dark-mode) .logo:hover {
         font-size: 24px;
     }
 
+    ul {
+        margin-top: 56px !important;
+    }
+
     .mobile { 
         display: block;
     }
@@ -439,7 +443,7 @@ body:not(.dark-mode) .logo:hover {
     }
 
     .header {
-        margin-top: 64px !important;
+        margin-top: 32px !important;
     }
 
     .current {
@@ -465,7 +469,7 @@ body:not(.dark-mode) .logo:hover {
     }
 
     .footer {
-        margin-bottom: 64px;
+        margin-bottom: 80px !important;
     }
 }
 
