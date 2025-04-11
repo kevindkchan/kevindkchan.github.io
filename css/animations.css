@@ -17,14 +17,7 @@
     animation: blur-entrance 0.8s ease-out forwards;
 }
 
-.education:hover,
-.club:hover,
 .project:hover {
     background: #f5f5f5;
     cursor: pointer;
-}
-
-.education:hover a img,
-.club:hover a img {
-    filter: saturate(100%);
 }

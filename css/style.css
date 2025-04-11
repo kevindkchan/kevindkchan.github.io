@@ -314,8 +314,6 @@ u {
         color: rgba(255, 255, 255, 0.5);
     }
 
-    .education:hover,
-    .club:hover,
     .project:hover {
         background: #191919;
         cursor: pointer;
@@ -377,8 +375,6 @@ body.dark-mode .club {
     color: rgba(255, 255, 255, 0.5);
 }
 
-body.dark-mode .education:hover,
-body.dark-mode .club:hover,
 body.dark-mode .project:hover {
     background: #191919;
     cursor: pointer;
@@ -638,8 +634,6 @@ body.dark-mode .tip u:hover {
     display: flex;
     justify-content: flex-end;
     margin-top: 16px;
-    border-radius: 8px;
-    padding: 12px;
 }
 
 .ualberta {
@@ -682,9 +676,8 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-style: normal;
     color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    padding: 12px;
-    padding-left: 50px;
+    margin-left: 18px;
+    margin-top: 8px;
 }
 
 .club img {
