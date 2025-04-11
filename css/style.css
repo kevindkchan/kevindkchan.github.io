@@ -123,13 +123,13 @@ u {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .section-subheader {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     font-weight: 500;
     margin-top: 4px;
     margin-bottom: 12px;
@@ -351,11 +351,11 @@ body:not(.dark-mode) .tooltip .tooltiptext {
 }
 
 body:not(.dark-mode) .section-header {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 body:not(.dark-mode) .section-subheader {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 body:not(.dark-mode) .logo,
@@ -408,14 +408,9 @@ body:not(.dark-mode) .logo:hover {
 /* Mobile */
 
 @media (max-width: 640px) {
-    ul {
-        margin-right: auto;
-        flex-direction: row !important;
-    }
 
-    ul a img {
-        width: 30px;
-        height: 30px;
+    ul a i {
+        font-size: 24px;
     }
 
     .mobile { 
@@ -444,10 +439,11 @@ body:not(.dark-mode) .logo:hover {
     }
 
     .header {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin-top: 64px !important;
+    }
+
+    .current {
+        top: 168px !important;
     }
 
     .tip {
@@ -503,7 +499,7 @@ body:not(.dark-mode) .logo:hover {
     font-weight: 600;
     font-style: normal;
     margin-left: 12px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .header-toptext {
@@ -524,7 +520,7 @@ body:not(.dark-mode) .logo:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 1px;
 }
 
@@ -535,7 +531,7 @@ body:not(.dark-mode) .logo:hover {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -543,7 +539,8 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 14px;
+    gap: 12px;
+    margin-top: 32px;
     margin-left: auto;
 }
 
@@ -556,7 +553,17 @@ ul a {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.current {
+    position: absolute;
+    top: 144px;
+    margin-left: 16px;
+    font-family: "Newsreader","Signifier","Times",serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .tip {
@@ -601,7 +608,7 @@ body.dark-mode .tip u:hover {
     font-weight: 600;
     font-style: normal;
     margin-left: 12px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .degree {
@@ -610,7 +617,7 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 2px;
 }
 
@@ -654,7 +661,7 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     margin-left: auto;
 }
 
@@ -711,7 +718,7 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .project-year {
@@ -728,7 +735,7 @@ body.dark-mode .tip u:hover {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 4px;
     line-height: 20px;
 }
@@ -812,7 +819,7 @@ body.dark-mode .tip u:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .footer-text,
