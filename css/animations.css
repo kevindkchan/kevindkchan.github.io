@@ -21,3 +21,18 @@
     background: #f5f5f5;
     cursor: pointer;
 }
+
+.project:hover,
+.project:hover .project-header,
+.project:hover .project-subheader,
+.project:hover .project-year {
+    color: rgba(0, 0, 0, 1) !important;
+    transition: all 0.25s ease;
+}
+
+.project,
+.project-header,
+.project-subheader,
+.project-year {
+    transition: all 0.25s ease;
+}

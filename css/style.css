@@ -265,6 +265,13 @@ u {
         background: #191919;
         cursor: pointer;
     }
+
+    .project:hover,
+    .project:hover .project-header,
+    .project:hover .project-subheader,
+    .project:hover .project-year {
+        color: rgba(255, 255, 255, 1) !important;
+    }
 }
 
 /* Dark Mode */
@@ -326,6 +333,13 @@ body.dark-mode .club {
 body.dark-mode .project:hover {
     background: #191919;
     cursor: pointer;
+}
+
+body.dark-mode .project:hover,
+body.dark-mode .project:hover .project-header,
+body.dark-mode .project:hover .project-subheader,
+body.dark-mode .project:hover .project-year {
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 /* Light Mode */
