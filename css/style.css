@@ -270,7 +270,7 @@ u {
     .project:hover .project-header,
     .project:hover .project-subheader,
     .project:hover .project-year {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1) !important;
     }
 
     ul a:hover {
@@ -343,7 +343,7 @@ body.dark-mode .project:hover,
 body.dark-mode .project:hover .project-header,
 body.dark-mode .project:hover .project-subheader,
 body.dark-mode .project:hover .project-year {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 body.dark-mode ul a:hover {
@@ -387,6 +387,17 @@ body:not(.dark-mode) .logo2 {
 
 body:not(.dark-mode) .logo:hover {
   filter: saturate(100%);
+}
+
+body:not(.dark-mode) .project:hover,
+body:not(.dark-mode) .project:hover .project-header,
+body:not(.dark-mode) .project:hover .project-subheader,
+body:not(.dark-mode) .project:hover .project-year {
+    color: rgba(0, 0, 0, 1);
+}
+
+body:not(.dark-mode) ul a:hover {
+    color: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
