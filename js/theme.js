@@ -3,6 +3,7 @@ const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const favicon = document.getElementById("favicon");
 const uofa = document.getElementById("uofa")
 const esports = document.getElementById("esports");
+const chan = document.getElementById("chan");
 const root = document.documentElement;
 const body = document.body;
 
@@ -17,6 +18,10 @@ function updateImg(isDark) {
 
     if (esports) {
         esports.src = isDark ? "img/esports2.png" : "img/esports.png";
+    }
+
+    if (chan) {
+        chan.src = isDark ? "img/chan2.png" : "img/chan.png";
     }
 }
 

@@ -873,6 +873,7 @@ body.dark-mode .tip u:hover {
     justify-content: center;
     gap: 12px;
     margin-bottom: 42px;
+    opacity: 0.75;
 }
 
 .quote {
