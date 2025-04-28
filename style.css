@@ -222,6 +222,14 @@ table a {
     left: 682px;
 }
 
+#character:hover ~ .eye {
+    opacity: 0;
+}
+
+#character:hover {
+    content: url('img/smile.png');
+}
+
 /* Mobile */
 
 @media (max-width: 640px) {
