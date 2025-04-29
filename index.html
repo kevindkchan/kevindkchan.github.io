@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Chan</title>
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="preload" as="image" href="img/face.png" type="image/png">
+    <link rel="preload" as="image" href="img/smile.png" type="image/png">
+    <link rel="preload" as="image" href="img/left.png" type="image/png">
+    <link rel="preload" as="image" href="img/right.png" type="image/png">
+    <link rel="preload" as="image" href="img/me.png" type="image/png">
+    <link rel="preload" as="image" href="img/school.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +20,10 @@
     <div class="container">
         <div class="profile">
             <div class="face">
-                <img id="character" src="img/face.png" width="100" height="150" alt="Doodle of Kevin Chan">
-                <img class="eye" id="eye-left" src="img/left.png" width="3" height="6">
-                <img class="eye" id="eye-right" src="img/right.png" width="3" height="6">
+                <img id="character" src="img/face.png" width="100" height="150" alt="Doodle of Kevin Chan" loading="eager" decoding="async">
+                <img id="character-smile" src="img/smile.png" width="100" height="150" alt="Smile" loading="lazy" decoding="async" style="opacity:0; position:absolute; top:0; left:0; pointer-events: none;">
+                <img class="eye" id="eye-left" src="img/left.png" width="3" height="6" loading="eager" decoding="async">
+                <img class="eye" id="eye-right" src="img/right.png" width="3" height="6" loading="eager" decoding="async">
             </div>
             <h1>Kevin Chan</h1>
             <p>@kevindkchan</p>
@@ -52,9 +59,9 @@
         <div class="column">
             <div class="about">
                 <h1>I'm</h1>
-                <p class="desktop">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20"></a> studying computing science.<br>
+                <p class="desktop">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20" loading="eager" decoding="async"></a> studying computing science.<br>
                     currently at a stealth startup doing frontend work.</p>
-                <p class="mobile">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20"></a>.<br>
+                <p class="mobile">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20" loading="eager" decoding="async"></a>.<br>
                     currently at a stealth startup.</p>
             </div>
             <div class="work desktop">
