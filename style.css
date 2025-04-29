@@ -72,7 +72,6 @@ a {
 .highlight {
     position: relative;
     display: inline-block;
-    
     z-index: 1;
 }
 
@@ -167,9 +166,9 @@ table a {
 }
 
 .arrow-container {
-    position: absolute;
-    right: 68%;
-    top: 45%;
+    position: fixed;
+    right: 70%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,9 +187,9 @@ table a {
 }
 
 .bracket-text {
-    position: absolute;
-    left: 69%;
-    top: 24%;
+    position: fixed;
+    right: 23%;
+    top: 20.5%;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -206,21 +205,31 @@ table a {
     color: #0f0f0e;
 }
 
+.face {
+    position: relative;
+    display: inline-block;
+}
+
+#character {
+    display: block;
+}
+
 .eye {
     position: absolute;
-    pointer-events: none;
-    transition: transform 0.1s ease;
 }
 
 #eye-left {
-    top: 294px;
-    left: 661px;
+    top: 35.5%;
+    left: 35%;
+    transform: translate(-50%, -50%);
 }
 
 #eye-right {
-    top: 294px;
-    left: 682px;
+    top: 35.5%;
+    left: 56.5%;
+    transform: translate(-50%, -50%);
 }
+
 
 #character:hover ~ .eye {
     opacity: 0;
