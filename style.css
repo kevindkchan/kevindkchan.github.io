@@ -252,15 +252,6 @@ a {
     transform: translate(-50%, -50%);
 }
 
-
-#character:hover ~ .eye {
-    opacity: 0;
-}
-
-#character:hover {
-    content: url('img/smile.png');
-}
-
 /* Mobile */
 
 @media (max-width: 640px) {
@@ -275,7 +266,6 @@ a {
 
     .container {
         flex-direction: column;
-        margin-top: 128px;
     }
 
     .arrow-container {

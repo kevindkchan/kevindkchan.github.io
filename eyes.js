@@ -28,3 +28,30 @@ function swapFaceImage() {
 swapFaceImage();
   
 window.addEventListener('resize', swapFaceImage);
+
+const character = document.getElementById('character');
+const eyes = document.querySelectorAll('.eye');
+
+function blinkSmile() {
+    character.src = 'img/smile.png';
+    eyes.forEach(eye => eye.style.opacity = '0');
+
+    setTimeout(() => {
+        character.src = 'img/face.png';
+        eyes.forEach(eye => eye.style.opacity = '1');
+    }, 100);
+}
+
+setInterval(() => {
+    blinkSmile();
+}, 5000);
+
+character.addEventListener('mouseenter', () => {
+    character.src = 'img/smile.png';
+    eyes.forEach(eye => eye.style.opacity = '0');
+});
+
+character.addEventListener('mouseleave', () => {
+    character.src = 'img/face.png';
+    eyes.forEach(eye => eye.style.opacity = '1');
+});
