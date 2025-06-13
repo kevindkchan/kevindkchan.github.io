@@ -4,119 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Chan</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
-    <link rel="preload" as="image" href="img/face.png" type="image/png">
-    <link rel="preload" as="image" href="img/smile.png" type="image/png">
-    <link rel="preload" as="image" href="img/left.png" type="image/png">
-    <link rel="preload" as="image" href="img/right.png" type="image/png">
-    <link rel="preload" as="image" href="img/me.png" type="image/png">
-    <link rel="preload" as="image" href="img/school.png" type="image/png">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-sV2jM/N3ZHX6j3ibFn1CgUi9eUwrFnS6ZqA5DUAVzjx6RNYz1UZocUqDPLrHg+VuwvWyPa/kZ+lGO9Z3bJek4g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="face">
-                <img id="character" src="img/face.png" width="100" height="150" alt="Doodle of Kevin Chan" loading="eager" decoding="async">
-                <img id="character-smile" src="img/smile.png" width="100" height="150" alt="Smile" loading="lazy" decoding="async" style="opacity:0; position:absolute; top:0; left:0; pointer-events: none;">
-                <img class="eye" id="eye-left" src="img/left.png" width="3" height="6" loading="eager" decoding="async" style="pointer-events: none;">
-                <img class="eye" id="eye-right" src="img/right.png" width="3" height="6" loading="eager" decoding="async" style="pointer-events: none;">
-            </div>
-            <h1>Kevin Chan</h1>
-            <p>@kevindkchan</p>
-            <div class="doodle-wrapper">
-                <svg class="doodle-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="none">
-                    <path d="
-                      M15,15 
-                      L385,10 
-                      Q395,15 390,30 
-                      L390,370 
-                      Q385,385 370,380 
-                      L30,380 
-                      Q15,375 10,360 
-                      L10,30 
-                      Q10,15 25,15 
-                      Z" 
-                      fill="none" 
-                      stroke="#0f0f0e" 
-                      stroke-width="3" 
-                      stroke-linecap="round" 
-                      stroke-linejoin="round" />
-                </svg>
-
-                <table>
-                    <tr><td><a class="underline" href="https://github.com/kevindkchan" target="_blank" rel="noopener noreferrer">GitHub.</a></td></tr>
-                    <tr><td><a class="underline" href="https://www.linkedin.com/in/kevindkchan/" target="_blank" rel="noopener noreferrer">LinkedIn.</a></td></tr>
-                    <tr><td><a class="underline" href="https://x.com/kevindkchan" target="_blank" rel="noopener noreferrer">Twitter.</a></td></tr>
-                    <tr><td><a class="underline" href="mailto:contact@kevindkchan.com" target="_blank" rel="noopener noreferrer">Email.</a></td></tr>
-                    <tr><td><a class="underline" href="https://codepen.io/kevindkchan" target="_blank" rel="noopener noreferrer">Codepen.</a></td></tr>
-                </table>
-            </div>
-        </div>
-        <div class="column">
-            <div class="about">
-                <h1>I'm</h1>
-                <p class="desktop">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20" loading="eager" decoding="async"></a> studying computing science.<br>
-                    currently at a stealth startup doing frontend work.</p>
-                <p class="mobile">a 3rd year at <a class="school highlight" href="#">@ualberta<img src="img/school.png" width="20" height="20" loading="eager" decoding="async"></a>.<br>
-                    currently at a stealth startup.</p>
-            </div>
-            <div class="work desktop">
-                <h1>featured works</h1>
-                <div class="project">
-                    <h2>- <a class="highlight" href="https://www.trumptarifftracker.live/" target="_blank" rel="noopener noreferrer">trump tariff tracker</a></h2>
-                </div>
-            </div>
-            <div class="work desktop">
-                <h1>ui / ux stuff</h1>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">doodle character</a></h2>
-                </div>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">highlighting effect</a></h2>
-                </div>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">underlining effect</a></h2>
-                </div>
-            </div>
-            <div class="work desktop">
-                <h1>thoughts</h1>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">placeholder</a></h2>
-                </div>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">placeholder</a></h2>
-                </div>
-                <div class="project">
-                    <h2>- <a class="highlight" href="#">placeholder</a></h2>
-                </div>
-            </div>
+    <div class="hero">
+        Currently Revamping... 
+        <br>
+        In the meantime,
+        <div class="links">
+            <a href="https://github.com/kevindkchan">GitHub</a>
+            <a href="https://www.linkedin.com/in/kevindkchan/">LinkedIn</a>
+            <a href="https://x.com/kevindkchan">Twitter</a>
         </div>
     </div>
-    <div class="arrow-container desktop">
-        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <path d="M50,100 Q50,20 100,20" fill="none" stroke="#0f0f0e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-            <polyline points="90,15 100,20 90,25" fill="none" stroke="#0f0f0e" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="arrow-text">my handle on <br>
-        most things</div>
-    </div>
-    <div class="bracket-text desktop">
-        <svg class="bracket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
-            <path d="
-              M10,0 
-              Q30,0 25,20 
-              Q20,30 30,50 
-              Q20,70 25,80 
-              Q30,100 10,100" 
-              fill="none" stroke="#0f0f0e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="label">about me!</span>
-    </div>
-      
-    <script src="eyes.js"></script>
 </body>
 </html>

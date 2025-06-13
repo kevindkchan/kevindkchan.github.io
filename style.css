@@ -1,275 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
-
 * {
     margin: 0;
     padding: 0;
-    line-height: 1;
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('img/grid.png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Gloria Hallelujah', cursive;
-    color: #0f0f0e;
-    height: 100vh;
-}
-
-a {
-    text-decoration: none;
-}
-
-.mobile { 
-    display: none;
-}
-
-.desktop { 
-    display: block;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.container {
-    display: flex;
-    gap: 32px;
-}
-
-/* Profile */
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* About */
-
-.about {
-    display: flex;
-    gap: 16px;
-}
-
-.about h1 {
-    font-size: 48px;
-}
-
-.about p {
-    line-height: 1.5;
-    align-items: flex-start;
-}
-
-.school {
-    color: #275d38;
-    font-weight: 600;
-}
-
-.highlight {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.highlight::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 0;
-    height: 50%;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40" preserveAspectRatio="none"><path d="M0,30 Q50,20 100,30 T200,30 L200,40 L0,40 Z" fill="yellow" opacity="0.4"/></svg>') repeat-x;
-    background-size: contain;
-    transform: translateY(-50%);
-    border-radius: 8px;
-    z-index: 2;
-    pointer-events: none;
-    transition: width 0.2s ease;
-}
-
-.highlight:hover::after {
-    width: 100%;
-}
-
-/* Works */
-
-.work {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.work h1 {
-    font-size: 20px;
-}
-
-.project h2 {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.project h2 a {
-    color: #0f0f0e;
-}
-
-.project {
-    margin-left: 12px;
-}
-
-.post h1 {
-    font-size: 20px;
-}
-
-.doodle-wrapper {
-    position: relative;
-    display: inline-block;
-    margin-top: 24px;
-}
-
-.doodle-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+html, body {
     height: 100%;
-    z-index: 1;
-    pointer-events: none;
-}
-
-table {
-    position: relative;
-    z-index: 2;
-    color: #0f0f0e;
-    border-collapse: collapse;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
-td {
-    padding: 8px 16px;
-}
-
-a {
-    text-decoration: none;
-    color: #0f0f0e;
-}
-
-.underline {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    padding: 4px 8px;
-    transition: background-color 0.3s ease;
-    border-radius: 4px;
-    line-height: 2;
     overflow: hidden;
 }
 
-.underline::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1em;
-    width: 0;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0,10 Q50,0 100,10" fill="none" stroke="%230f0f0e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat left bottom;
-    background-size: contain;
-    transition: width 0.1s ease;
-    pointer-events: none;
+body {
+    font-family: 'Geist', sans-serif;
+    letter-spacing: -0.04em;
 }
 
-.underline:hover::after {
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
-.arrow-container {
-    position: fixed;
-    right: 70%;
-    
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.arrow-text {
-    font-size: 12px;
-    color: #333;
-    transform: rotate(4deg);
-}
-
-.arrow {
-    width: 100px;
-    height: 50px;
-}
-
-.bracket-text {
-    position: fixed;
-    right: 23%;
-    top: 20.5%;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.bracket {
-    width: 20px;
-    height: 80px;
-}
-
-.label {
-    font-size: 12px;
-    color: #0f0f0e;
-}
-
-.face {
-    position: relative;
-    display: inline-block;
-}
-
-#character {
-    display: block;
-}
-
-.eye {
-    position: absolute;
-}
-
-#eye-left {
-    top: 35.5%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
-
-#eye-right {
-    top: 35.5%;
-    left: 56.5%;
-    transform: translate(-50%, -50%);
-}
-
-/* Mobile */
-
-@media (max-width: 640px) {
-
-    .mobile { 
-        display: block;
-    }
-
-    .desktop { 
-        display: none;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .arrow-container {
-        top: 25%;
-        right: 63%;
-    }
 }
